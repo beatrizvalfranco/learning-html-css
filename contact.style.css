@@ -25,8 +25,15 @@ a:visited {
 
 td, th {
     color: #404543;
-    border: 2px solid orange;
 
+}
+
+.container{
+    background-color: #81dec3;
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-bottom: 100px;
+    height: 150px;
 }
 
 .menu-container {
@@ -75,12 +82,16 @@ input[type=submit] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
 
-  input[type=text], input[type=email], input[type=tel], datalist {
+input[type=text], input[type=email], input[type=tel] {
     background-color: powderblue;
     border: none;
     color: #404543;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+.custom-input {
+    background-color: powderblue;
+}
