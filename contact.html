@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <link rel="stylesheet" type="text/css" href="contact.style.css">
+		<title>Contato</title>
+        		<meta charset="utf-8">              
+	</head>
+</html>
+	
+<section>
+    <div>
+        <h1>Envie seus dados!</h1>
+    </div>
+</section>
+
+<body>
+    <nav class="menu-container">
+        <ul class="menu">
+            <li><a href="./homepage.html">Home</a></li>
+            <li><a href="./about.html">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="row">
+        <div class="form-content">
+            <form action="/action_pagina.php" method="get">
+                <table class="table">
+        
+                    <tr>
+                        <td>Nome:</td>
+                        <td>
+                            <input type="text" placeholder="Digite seu nome completo" autofocus="" required="" style="width:97%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>
+                            <input type="email" placeholder="Digite seu email" required="" style="width:97%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Celular:</td>
+                        <td>
+                            <input type="tel" pattern="^?d2\d{5}[-\s]\d{4}$" placeholder="(XX) XXXXX-XXXX" style="width:97%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cidade:</td>
+                        <td>
+                            <input type="text" placeholder="Digite sua cidade" style="width:97%">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Estado:</td>
+                        <td>
+                            <input list="estados" placeholder="Selecione seu estado" style="width:97%">
+                            <datalist id="estados">
+                                <option value="Acre">
+                                <option value="Alagoas">
+                                <option value="Amapá">
+                                <option value="Amazonas">
+                                <option value="Bahia">
+                                <option value="Ceará">
+                                <option value="Distrito Federal">
+                                <option value="Espírito Santo">
+                                <option value="Goiás">
+                                <option value="Maranhão">
+                                <option value="Mato Grosso">
+                                <option value="Mato Grosso do Sul">
+                                <option value="Minas Gerais">
+                                <option value="Pará">
+                                <option value="Paraíba">
+                                <option value="Paraná">
+                                <option value="Pernambuco">
+                                <option value="Piauí">
+                                <option value="Rio de Janeiro">
+                                <option value="Rio Grande do Norte">
+                                <option value="Rio Grande do Sul">
+                                <option value="Rondônia">
+                                <option value="Roraima">
+                                <option value="Santa Catarina">
+                                <option value="São Paulo">
+                                <option value="Sergipe">
+                                <option value="Tocantins">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nível de surf:</td>
+                        <td>
+                                <input type="radio" id="iniciante" name="nivel" value="iniciante">
+                                <label for="iniciante">Iniciante</label><br>
+                                <input type="radio" id="intermediario" name="nivel" value="intermediario">
+                                <label for="intermediario">Intermediário</label><br>
+                                <input type="radio" id="avançado" name="nivel" value="avançado">
+                                <label for="avançado">Avançado</label><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Base:</td>
+                        <td>
+                            <input type="checkbox" id="goofy" name="base" value="goofy">
+                            <label for="goofy">Goofy</label><br>
+                            <input type="checkbox" id="regular" name="base" value="regular">
+                            <label for="regular">Regular</label><br>
+                        </td>
+                    </tr>
+                </table>
+                <div class="button-content">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+	</body>
+</html>
