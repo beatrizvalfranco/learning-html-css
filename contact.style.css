@@ -1,14 +1,18 @@
 body {
-    background-color: powderblue;
+    background-image: url("wave_background.jpg");
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
     text-align: center;
-    padding-top: 40px;
+    padding: 60px 50px 40px 50px;
+    margin-top: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
-    color: #404543;
+    color: #000000;
+    background-color: #45ceea;
+    position: relative;
+    top: -10px;
 }
 
 a {
@@ -20,7 +24,7 @@ a:link {
 }
 
 a:visited { 
-    color: grey
+    color: #38535d
 }
 
 td, th {
@@ -28,17 +32,23 @@ td, th {
 
 }
 
-.container{
-    background-color: #81dec3;
-    margin-right: 300px;
-    margin-left: 300px;
-    margin-bottom: 100px;
-    height: 150px;
+.bloco {
+    position: absolute;
+    top: 45%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    width: 800px;
 }
 
 .menu-container {
     text-align: center;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    background-color: #45ceea;
+    position: relative;
+    top: -40px;
 }
 
 .menu li {
@@ -57,11 +67,15 @@ td, th {
 
 .form-content {
     width: 50%;
+    position: relative;
+    padding-right: 190px;
 }
 
 .table {
-    width: 38%;
-    margin-left: 300px;
+    padding-left: -10px;
+    width: 150%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
 }
 
 .button-content {
@@ -75,17 +89,20 @@ td, th {
 }
 
 input[type=submit] {
-    background-color: orange;
+    background-color: #000000;
     border: none;
+    border-radius: 8px;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    position: relative;
+    left: 100px;
 }
 
 input[type=text], input[type=email], input[type=tel] {
-    background-color: powderblue;
+    background-color: rgb(176, 224, 230, 0.4);
     border: none;
     color: #404543;
     text-decoration: none;
@@ -93,5 +110,5 @@ input[type=text], input[type=email], input[type=tel] {
 }
 
 .custom-input {
-    background-color: powderblue;
+    background-color: rgb(176, 224, 230, 0.4);
 }
