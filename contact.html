@@ -2,113 +2,122 @@
 <html lang="pt-br">
 	<head>
         <link rel="stylesheet" type="text/css" href="contact.style.css">
-		<title>Contato</title>
-        		<meta charset="utf-8">              
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contato</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">              
 	</head>
     <body>
         <div class="bloco">
-            <section>
-                <h1>Envie seus dados!</h1>
-            </section>
-            <nav class="menu-container">
-                <ul class="menu">
-                    <li><a href="./homepage.html">Home</a></li>
-                    <li><a href="./about.html">Sobre</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-
-        <section class="row">
-            <div class="form-content">
-                <form action="/action_pagina.php" method="get">
-                    <table class="table">
-            
-                        <tr>
-                            <td>Nome:</td>
-                            <td>
-                                <input type="text" placeholder="Digite seu nome completo" autofocus="" required="" style="width:97%">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Email:</td>
-                            <td>
-                                <input type="email" placeholder="Digite seu email" required="" style="width:97%">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Celular:</td>
-                            <td>
-                                <input type="tel" pattern="^?d2\d{5}[-\s]\d{4}$" placeholder="(XX) XXXXX-XXXX" style="width:97%">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Cidade:</td>
-                            <td>
-                                <input type="text" placeholder="Digite sua cidade" style="width:97%">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Estado:</td>
-                            <td>
-                                <input list="estados" placeholder="Selecione seu estado" style="width:97%" class="custom-input">
-                                <datalist id="estados">
-                                    <option value="Acre">
-                                    <option value="Alagoas">
-                                    <option value="Amapá">
-                                    <option value="Amazonas">
-                                    <option value="Bahia">
-                                    <option value="Ceará">
-                                    <option value="Distrito Federal">
-                                    <option value="Espírito Santo">
-                                    <option value="Goiás">
-                                    <option value="Maranhão">
-                                    <option value="Mato Grosso">
-                                    <option value="Mato Grosso do Sul">
-                                    <option value="Minas Gerais">
-                                    <option value="Pará">
-                                    <option value="Paraíba">
-                                    <option value="Paraná">
-                                    <option value="Pernambuco">
-                                    <option value="Piauí">
-                                    <option value="Rio de Janeiro">
-                                    <option value="Rio Grande do Norte">
-                                    <option value="Rio Grande do Sul">
-                                    <option value="Rondônia">
-                                    <option value="Roraima">
-                                    <option value="Santa Catarina">
-                                    <option value="São Paulo">
-                                    <option value="Sergipe">
-                                    <option value="Tocantins">
-                                </datalist>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Nível de surf:</td>
-                            <td>
-                                    <input type="radio" id="iniciante" name="nivel" value="iniciante">
-                                    <label for="iniciante">Iniciante</label><br>
-                                    <input type="radio" id="intermediario" name="nivel" value="intermediario">
-                                    <label for="intermediario">Intermediário</label><br>
-                                    <input type="radio" id="avançado" name="nivel" value="avançado">
-                                    <label for="avançado">Avançado</label><br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Base:</td>
-                            <td>
-                                <input type="checkbox" id="goofy" name="base" value="goofy">
-                                <label for="goofy">Goofy</label><br>
-                                <input type="checkbox" id="regular" name="base" value="regular">
-                                <label for="regular">Regular</label><br>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="button-content">
-                        <input type="submit" value="Submit">
+            <div class="container fixed-size-image">
+                <section>
+                    <h1>Envie seus dados!</h1>
+                </section>
+                <nav class="menu-container navbar navbar-expand-lg">
+                    <div class="container"> 
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="./homepage.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./about.html">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                        </ul>
                     </div>
-                </form>
+                </nav>
+
+                <section class="row">
+                    <div class="form-content">
+                        <form action="/action_pagina.php" method="get">
+                            <table class="table">
+                    
+                                <tr>
+                                    <td>Nome:</td>
+                                    <td>
+                                        <input type="text" placeholder="Digite seu nome completo" autofocus="" required="" style="width:97%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>
+                                        <input type="email" placeholder="Digite seu email" required="" style="width:97%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Celular:</td>
+                                    <td>
+                                        <input type="tel" pattern="^?d2\d{5}[-\s]\d{4}$" placeholder="(XX) XXXXX-XXXX" style="width:97%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cidade:</td>
+                                    <td>
+                                        <input type="text" placeholder="Digite sua cidade" style="width:97%">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Estado:</td>
+                                    <td>
+                                        <input list="estados" placeholder="Selecione seu estado" style="width:97%" class="custom-input">
+                                        <datalist id="estados">
+                                            <option value="Acre">
+                                            <option value="Alagoas">
+                                            <option value="Amapá">
+                                            <option value="Amazonas">
+                                            <option value="Bahia">
+                                            <option value="Ceará">
+                                            <option value="Distrito Federal">
+                                            <option value="Espírito Santo">
+                                            <option value="Goiás">
+                                            <option value="Maranhão">
+                                            <option value="Mato Grosso">
+                                            <option value="Mato Grosso do Sul">
+                                            <option value="Minas Gerais">
+                                            <option value="Pará">
+                                            <option value="Paraíba">
+                                            <option value="Paraná">
+                                            <option value="Pernambuco">
+                                            <option value="Piauí">
+                                            <option value="Rio de Janeiro">
+                                            <option value="Rio Grande do Norte">
+                                            <option value="Rio Grande do Sul">
+                                            <option value="Rondônia">
+                                            <option value="Roraima">
+                                            <option value="Santa Catarina">
+                                            <option value="São Paulo">
+                                            <option value="Sergipe">
+                                            <option value="Tocantins">
+                                        </datalist>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nível de surf:</td>
+                                    <td>
+                                            <input type="radio" id="iniciante" name="nivel" value="iniciante">
+                                            <label for="iniciante">Iniciante</label><br>
+                                            <input type="radio" id="intermediario" name="nivel" value="intermediario">
+                                            <label for="intermediario">Intermediário</label><br>
+                                            <input type="radio" id="avançado" name="nivel" value="avançado">
+                                            <label for="avançado">Avançado</label><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Base:</td>
+                                    <td>
+                                        <input type="checkbox" id="goofy" name="base" value="goofy">
+                                        <label for="goofy">Goofy</label><br>
+                                        <input type="checkbox" id="regular" name="base" value="regular">
+                                        <label for="regular">Regular</label><br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </section>
             </div>
-        </section>
-	</div>
+            <div class="center">
+                <button type="button">Submit</button>
+            </div>
+            <footer class="footer p">
+                <script src="myscript.js"></script>
+            </footer>
+	    </div>
     </body>
 </html>
